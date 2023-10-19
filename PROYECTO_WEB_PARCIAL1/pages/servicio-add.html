@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/user.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.3/dist/sweetalert2.min.css">
+
+    <title>Departamento de Bienestar Universitario</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+
+            <span class="logo_name">DBU</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Dahsboard</span>
+                    </a></li>
+                <li><a href="usuarios.html">
+                        <i class="uil uil-files-landscapes"></i>
+                        <span class="link-name">Usuarios</span>
+                    </a></li>
+                <li><a href="estudiantes.html">
+                        <i class="uil uil-chart"></i>
+                        <span class="link-name">Estudiantes</span>
+                    </a></li>
+                <li><a href="servicios.html">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="link-name">Servicios</span>
+                    </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="login.html">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+
+            <img src="../images/profile.png" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="title">
+                <i class="uil uil-user"></i>
+                <div class="text">Añadir Servicio</div>
+            </div>
+
+            <div class="user-form">
+                <form id="registroForm">
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="fullname">ID</label>
+                            <input type="text" class="form-control" id="id" name="id" placeholder="Ingrese el ID">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                placeholder="Ingrese el nombre del servicio">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fullname">Encargado/a</label>
+                            <input type="text" class="form-control" id="encargado" name="encargado"
+                                placeholder="Ingrese el nombre del encargado del servicio">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="form-group col-md-4">
+                            <label for="fullname">Estado</label>
+                            <select class="form-select" aria-label="Default select example" id="estado" name="estado">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Activo</option>
+                                <option value="2">Inhabilitado</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4">Añadir Servicio</button>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.3/dist/sweetalert2.all.min.js"></script>
+    <script src="../js/servicio.js"></script>
+</body>
+
+</html>
